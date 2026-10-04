@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Chimaobi Ozomamelu — Full-Stack Engineer · Fintech &amp; Marketplaces</title>
-<meta name="description" content="Full-stack engineer who builds trust into money-moving products. Creator of Escrit, an escrow marketplace. Explore the portfolio, unlock the vault, earn FOLIO on Sepolia." />
+<title>Ozomamelu Chimaobi Adolphus — Electrical &amp; Automation Engineer</title>
+<meta name="description" content="Portfolio of Ozomamelu Chimaobi Adolphus — Electrical & Electronics Engineer specializing in Communications, Control Systems, MATLAB, PLCs, and Full-Stack Engineering." />
 <meta name="theme-color" content="#0a0a0f" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle' fill='%23c6ff3d' font-family='serif'%3EC%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,18 +44,7 @@ p.lead{color:var(--mut);font-size:clamp(1.02rem,1.5vw,1.2rem);max-width:60ch}
   radial-gradient(700px 500px at -10% 40%,rgba(198,255,61,.07),transparent 60%),var(--bg)}
 .gridfx{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 20%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 50% 20%,#000 10%,transparent 70%)}
 #glow{position:fixed;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(198,255,61,.12),transparent 65%);transform:translate(-50%,-50%);left:50%;top:30%;transition:opacity .3s}
-/* fixed portrait: duotone, masked so it melts into the page, dims as you read */
-#me{position:fixed;top:0;right:0;bottom:0;width:min(60vw,860px);z-index:-1;pointer-events:none;opacity:0;transition:opacity 1.4s ease;
-  -webkit-mask-image:linear-gradient(to left,#000 45%,transparent 100%),linear-gradient(to top,transparent 0,#000 20%);
-  -webkit-mask-composite:source-in;mask-image:linear-gradient(to left,#000 45%,transparent 100%),linear-gradient(to top,transparent 0,#000 20%);mask-composite:intersect}
-#me img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%;filter:grayscale(1) contrast(1.2) brightness(1.1)}
-#me .tint{position:absolute;inset:0;background:linear-gradient(160deg,var(--violet),var(--lime));mix-blend-mode:color}
-#me.on{opacity:var(--me-o,.2)}
-@media(max-width:760px){#me{width:100%;-webkit-mask-image:linear-gradient(to bottom,#000 0,transparent 70%);mask-image:linear-gradient(to bottom,#000 0,transparent 70%)}#me img{object-position:center 12%}}
-.avatar{overflow:hidden;background-size:cover;background-position:center 20%}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
-.tog{display:flex;gap:10px;align-items:center;font-size:.84rem;color:var(--mut);margin-top:14px;cursor:pointer}
-.tog input{accent-color:var(--lime);width:16px;height:16px}
+
 #prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--lime),var(--violet),var(--pink));z-index:100}
 
 /* nav */
@@ -76,7 +65,6 @@ nav.solid{background:rgba(10,10,15,.8);backdrop-filter:blur(14px);border-color:v
 .btn.ghost{background:transparent;color:var(--fg);border-color:var(--line);box-shadow:none}
 .btn.ghost:hover{border-color:var(--fg)}
 .btn.sm{padding:.5rem 1rem;font-size:.85rem}
-.btn[disabled]{opacity:.45;pointer-events:none}
 
 /* hero */
 .hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 70px}
@@ -85,34 +73,29 @@ nav.solid{background:rgba(10,10,15,.8);backdrop-filter:blur(14px);border-color:v
 .status{display:inline-flex;gap:.6rem;align-items:center;font-family:var(--mono);font-size:.78rem;color:var(--mut);margin-bottom:1.6rem}
 .status i{width:9px;height:9px;border-radius:50%;background:var(--lime);animation:pulse 2s infinite}
 @keyframes pulse{70%{box-shadow:0 0 0 10px rgba(198,255,61,0)}0%{box-shadow:0 0 0 0 rgba(198,255,61,.6)}}
-.name{font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,10vw,8rem);line-height:.92;letter-spacing:-.04em}
+.name{font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,8vw,6.5rem);line-height:.95;letter-spacing:-.04em}
 .name span{display:block}
 .name .it{font-style:italic;color:var(--lime)}
-.role{margin:1.6rem 0 2rem;font-size:clamp(1.1rem,2.2vw,1.5rem);color:var(--mut);min-height:2.2em}
-.role b{color:var(--fg);font-weight:500;border-right:2px solid var(--lime);padding-right:4px;animation:blink 1s step-end infinite}
-@keyframes blink{50%{border-color:transparent}}
+.role{margin:1.6rem 0 2rem;font-size:clamp(1.1rem,2vw,1.4rem);color:var(--mut);min-height:2.2em}
+.role b{color:var(--fg);font-weight:500;border-right:2px solid var(--lime);padding-right:4px}
 .cta{display:flex;flex-wrap:wrap;gap:.8rem}
 
 /* player card */
-.card3d{perspective:1000px}
-.player{background:linear-gradient(160deg,var(--bg3),var(--bg2));border:1px solid var(--line);border-radius:28px;padding:26px;position:relative;overflow:hidden;transition:transform .15s;transform-style:preserve-3d;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+.player{background:linear-gradient(160deg,var(--bg3),var(--bg2));border:1px solid var(--line);border-radius:28px;padding:26px;position:relative;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
 .player::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(135deg,var(--lime),transparent 40%,var(--violet));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.7;pointer-events:none}
 .p-head{display:flex;gap:14px;align-items:center}
 .avatar{width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,var(--violet),var(--pink));display:grid;place-items:center;font-family:var(--serif);font-size:2rem;color:#fff}
 .p-head small{font-family:var(--mono);color:var(--mut);font-size:.72rem}
 .lvl{margin:18px 0 6px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:.78rem}
-.xpbar{height:8px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden}
-.xpbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lime),var(--violet));border-radius:99px;transition:width .8s cubic-bezier(.2,.8,.2,1)}
 .stats{margin-top:20px;display:grid;gap:11px}
-.stat{display:grid;grid-template-columns:92px 1fr 34px;gap:10px;align-items:center;font-size:.82rem;color:var(--mut)}
+.stat{display:grid;grid-template-columns:110px 1fr 34px;gap:10px;align-items:center;font-size:.82rem;color:var(--mut)}
 .stat .b{height:6px;background:rgba(255,255,255,.07);border-radius:99px;overflow:hidden}
-.stat .b i{display:block;height:100%;background:var(--lime);width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.stat .b i{display:block;height:100%;background:var(--lime)}
 .stat span:last-child{font-family:var(--mono);text-align:right;color:var(--fg)}
-.p-foot{margin-top:18px;font-size:.72rem;color:#6d6b7b;font-family:var(--mono)}
 
 /* marquee */
 .marq{border-block:1px solid var(--line);overflow:hidden;padding:16px 0}
-.mt{display:flex;gap:46px;width:max-content;animation:mq 40s linear infinite;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.mt{display:flex;gap:46px;width:max-content;animation:mq 35s linear infinite;font-family:var(--mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
 .mt span::after{content:"✦";margin-left:46px;color:var(--lime)}
 @keyframes mq{to{transform:translateX(-50%)}}
 
@@ -124,7 +107,7 @@ nav.solid{background:rgba(10,10,15,.8);backdrop-filter:blur(14px);border-color:v
 .facts{display:grid;gap:12px}
 .fact{border:1px solid var(--line);border-radius:18px;padding:18px 20px;background:var(--bg2)}
 .fact small{font-family:var(--mono);color:var(--mut);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em}
-.fact div{font-family:var(--serif);font-size:1.7rem;line-height:1.1;margin-top:4px}
+.fact div{font-family:var(--serif);font-size:1.5rem;line-height:1.1;margin-top:4px}
 
 /* projects */
 .proj{display:grid;gap:22px;margin-top:30px}
@@ -139,19 +122,6 @@ nav.solid{background:rgba(10,10,15,.8);backdrop-filter:blur(14px);border-color:v
 .ul li::before{content:"→";position:absolute;left:0;color:var(--lime)}
 .tech{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0}
 .tech span{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.25rem .65rem;color:var(--mut)}
-.feat .vis{background:radial-gradient(400px 260px at 70% 30%,rgba(139,108,255,.35),transparent 70%),linear-gradient(160deg,#14141e,#0c0c14);display:grid;place-items:center;padding:30px;min-height:300px}
-.flow{width:100%;max-width:340px;display:grid;gap:10px}
-.node{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:14px;padding:12px 14px;background:rgba(255,255,255,.04);font-size:.86rem;opacity:.4;transform:translateX(-6px);transition:all .5s}
-.node.on{opacity:1;transform:none;border-color:rgba(198,255,61,.5);background:rgba(198,255,61,.07)}
-.node b{font-family:var(--mono);color:var(--lime);font-size:.74rem}
-.more{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-@media(max-width:760px){.more{grid-template-columns:1fr}}
-.mini{border:1px dashed var(--line);border-radius:var(--r);padding:28px;background:rgba(255,255,255,.015);position:relative;overflow:hidden;--mx:50%;--my:50%}
-.mini::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(139,108,255,.18),transparent 60%);opacity:0;transition:opacity .3s}
-.mini:hover::before{opacity:1}
-.mini h3,.mini p{position:relative}
-.mini p{color:var(--mut);font-size:.94rem;margin-top:6px}
-.mini .tag{font-family:var(--mono);font-size:.7rem;color:var(--mut)}
 
 /* skills */
 .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
@@ -159,8 +129,7 @@ nav.solid{background:rgba(10,10,15,.8);backdrop-filter:blur(14px);border-color:v
 .sk{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:var(--bg2)}
 .sk h3{font-family:var(--mono);font-size:.8rem;color:var(--lime);text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px}
 .sk .chips{display:flex;flex-wrap:wrap;gap:8px}
-.sk .chips span{border:1px solid var(--line);padding:.35rem .8rem;border-radius:999px;font-size:.88rem;transition:all .2s}
-.sk .chips span:hover{background:var(--lime);color:#10130a;border-color:var(--lime);transform:translateY(-2px)}
+.sk .chips span{border:1px solid var(--line);padding:.35rem .8rem;border-radius:999px;font-size:.88rem}
 
 /* timeline */
 .tl{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:30px}
@@ -172,681 +141,281 @@ nav.solid{background:rgba(10,10,15,.8);backdrop-filter:blur(14px);border-color:v
 .ev small{font-family:var(--mono);color:var(--mut);font-size:.74rem}
 .ev h4{font-size:1.1rem;font-weight:600;margin:2px 0}
 .ev p{color:var(--mut);font-size:.93rem}
-.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
-@media(max-width:760px){.certs{grid-template-columns:1fr}}
-.cert{border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--bg2);display:flex;gap:14px;align-items:center}
-.cert i{font-style:normal;font-size:1.6rem}
-.cert small{color:var(--mut);font-family:var(--mono);font-size:.72rem}
-
-/* vault */
-.vaultbox{position:relative;border:1px solid var(--line);border-radius:28px;background:var(--bg2);overflow:hidden;margin-top:28px}
-.vcontent{padding:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;transition:filter .8s,opacity .8s}
-@media(max-width:960px){.vcontent{grid-template-columns:1fr}}
-.vcontent .vc{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg)}
-.vcontent h3{margin-bottom:10px}
-.vcontent p,.vcontent li{color:var(--mut);font-size:.93rem}
-.vcontent ul{list-style:none;display:grid;gap:8px}
-.vcontent li{padding-left:1.2rem;position:relative}
-.vcontent li::before{content:"✦";position:absolute;left:0;color:var(--lime);font-size:.7rem;top:.35rem}
-.vaultbox.locked .vcontent{filter:blur(9px);opacity:.5;pointer-events:none;user-select:none}
-.gate{position:absolute;inset:0;display:none;place-items:center;padding:22px;background:linear-gradient(180deg,rgba(10,10,15,.25),rgba(10,10,15,.7))}
-.vaultbox.locked .gate{display:grid}
-.gatecard{max-width:560px;text-align:center;background:rgba(18,18,26,.92);border:1px solid var(--line);border-radius:26px;padding:34px;backdrop-filter:blur(10px)}
-.gatecard .lock{font-size:2.4rem;animation:wob 3s ease-in-out infinite}
-@keyframes wob{50%{transform:rotate(-8deg) scale(1.08)}}
-.gatecard h3{font-family:var(--serif);font-weight:400;font-size:2rem;margin:.4rem 0}
-.gatecard p{color:var(--mut);font-size:.95rem}
-.keyopts{display:grid;gap:10px;margin-top:20px}
-.hint{font-family:var(--mono);font-size:.72rem;color:#6d6b7b;margin-top:14px}
-
-/* contact */
-.contact{text-align:center;border:1px solid var(--line);border-radius:36px;padding:80px 24px;background:radial-gradient(600px 260px at 50% 0,rgba(139,108,255,.22),transparent 70%),var(--bg2)}
-.contact h2{font-size:clamp(2.6rem,7vw,5.6rem);margin:.5rem 0}
-.contact .cta{justify-content:center;margin-top:26px}
-.socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px}
-.socials a{font-family:var(--mono);font-size:.82rem;border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem;text-decoration:none;color:var(--mut);transition:all .2s}
-.socials a:hover{color:var(--fg);border-color:var(--lime)}
-footer{padding:36px 0 120px;color:#6d6b7b;font-size:.84rem;font-family:var(--mono);text-align:center}
-
-/* quest dock */
-.dock{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0));z-index:70;width:min(330px,calc(100% - 28px));pointer-events:none}
-.dock>*{pointer-events:auto}
-.dock-btn{margin-left:auto;display:flex;gap:.45rem;align-items:center;background:rgba(18,18,26,.82);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:999px;padding:.45rem .8rem;box-shadow:0 10px 28px -12px rgba(0,0,0,.8);font-family:var(--mono);font-size:.74rem;opacity:.72;transition:opacity .2s,transform .2s,border-color .2s}
-.dock-btn:hover,.dock.open .dock-btn{opacity:1;border-color:var(--lime)}
-.dock-btn b{color:var(--lime);font-weight:500}
-.dock-btn .qc{color:var(--mut)}
-.dock-btn .chev{display:inline-block;transition:transform .25s;color:var(--mut);font-size:.7rem}
-.dock.open .dock-btn .chev{transform:rotate(180deg)}
-.dock-btn.ping{animation:ping 1.2s ease-out 1}
-@keyframes ping{0%{box-shadow:0 0 0 0 rgba(198,255,61,.55)}100%{box-shadow:0 0 0 14px rgba(198,255,61,0)}}
-.dock-panel{display:none;background:rgba(18,18,26,.96);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;padding:14px 16px 16px;margin-bottom:8px;max-height:min(55vh,440px);overflow:auto;box-shadow:0 24px 60px -20px rgba(0,0,0,.9)}
-.dock.open .dock-panel{display:block;animation:up .25s}
-.dock-hd{position:sticky;top:-14px;margin:-14px -16px 6px;padding:12px 16px 8px;background:rgba(18,18,26,.97);display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:.72rem;color:var(--mut);z-index:1}
-.dock-x{border:1px solid var(--line);border-radius:999px;width:26px;height:26px;display:grid;place-items:center;color:var(--mut);font-size:.9rem;line-height:1}
-.dock-x:hover{color:var(--fg);border-color:var(--lime)}
-@media(max-width:600px){.dock-btn .lbl{display:none}.dock-panel{max-height:50vh}}
-@keyframes up{from{opacity:0;transform:translateY(14px)}}
-.dock h4{font-family:var(--mono);font-size:.75rem;color:var(--lime);text-transform:uppercase;letter-spacing:.14em;margin:16px 0 8px}
-.dock h4:first-child{margin-top:0}
-.wallet{border:1px solid var(--line);border-radius:14px;padding:14px;font-size:.84rem;color:var(--mut)}
-.wallet .row{display:flex;justify-content:space-between;gap:8px;margin-top:6px;font-family:var(--mono);font-size:.78rem;color:var(--fg)}
-.q{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:.85rem}
-.q .ck{width:18px;height:18px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:.65rem}
-.q.d .ck{background:var(--lime);border-color:var(--lime);color:#10130a}
-.q small{display:block;color:var(--mut);font-family:var(--mono);font-size:.68rem}
-.q .on{font-family:var(--mono);font-size:.68rem;color:var(--lime)}
-.warn{font-size:.78rem;color:var(--warn);margin-top:10px}
-.toasts{position:fixed;left:50%;transform:translateX(-50%);top:78px;z-index:90;display:grid;gap:8px;pointer-events:none;width:min(420px,calc(100% - 28px))}
-.toast{background:var(--bg3);border:1px solid var(--lime);border-radius:14px;padding:.7rem 1rem;font-size:.88rem;font-family:var(--mono);animation:tin .4s,tout .4s 3.2s forwards;box-shadow:0 14px 30px -12px rgba(0,0,0,.8)}
-.toast.bad{border-color:var(--pink)}
-@keyframes tin{from{opacity:0;transform:translateY(-14px)}}
-@keyframes tout{to{opacity:0;transform:translateY(-10px)}}
-#confetti{position:fixed;inset:0;pointer-events:none;z-index:95}
-
-.rv{opacity:0;transform:translateY(28px);transition:opacity .9s,transform .9s cubic-bezier(.2,.7,.2,1)}
-.rv.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
-
-/* print CV */
-#cvPrint{display:none}
-@media print{
-  body>*:not(#cvPrint){display:none!important}
-  body{background:#fff;color:#111;padding:0}
-  #cvPrint{display:block!important;font-family:Georgia,serif;font-size:11pt;line-height:1.45;padding:0}
-  #cvPrint h1{font-size:22pt;margin-bottom:2pt;font-weight:700}
-  #cvPrint h2{font-size:12pt;text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid #999;margin:14pt 0 6pt;padding-bottom:2pt;font-family:Arial,sans-serif;font-weight:700;color:#111}
-  #cvPrint .row{display:flex;justify-content:space-between;font-weight:700}
-  #cvPrint p,#cvPrint li{color:#222}
-  #cvPrint ul{margin-left:16pt}
-}
 </style>
 </head>
 <body>
-<div class="bgfx"></div><div class="gridfx"></div>
-<div id="me" aria-hidden="true"><img alt="" decoding="async" /><span class="tint"></span></div><div id="glow"></div><div id="prog"></div>
-<div class="toasts" id="toasts" aria-live="polite"></div>
-<canvas id="confetti"></canvas>
+
+<div class="bgfx"></div>
+<div class="gridfx"></div>
+<div id="prog"></div>
 
 <nav id="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="#top" aria-label="Home"><span id="brandName"></span><i>.</i></a>
+    <a href="#" class="brand">Chimaobi<i>.eng</i></a>
     <div class="links">
-      <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#path">Path</a><a href="#vault">Vault</a><a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#skills">Technical Competencies</a>
+      <a href="#experience">Experience &amp; Education</a>
+      <a href="#projects">Engineering Projects</a>
     </div>
     <div class="pills">
-      <span class="pill" title="Your XP on this site">XP <b id="xpPill">0</b></span>
-      <button class="btn sm" id="walletBtn" type="button">Connect wallet</button>
+      <div class="pill">Degree: <b>B.Eng Electrical</b></div>
+      <a href="mailto:ozomameluchimaobi123@gmail.com" class="btn sm">Contact Candidate</a>
     </div>
   </div>
 </nav>
 
-<main id="top">
-<!-- HERO -->
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="status"><i></i><span id="availability"></span></div>
-      <h1 class="name" id="heroName" aria-label=""></h1>
-      <p class="role">I <b id="typed"></b></p>
-      <div class="cta">
-        <a class="btn" href="#work">See my work</a>
-        <a class="btn ghost" id="cvBtn" href="cv.pdf" download>Download CV</a>
-        <button class="btn ghost" id="questBtn" type="button">Play the quest ✦</button>
+      <div class="status"><i></i> Ready for INTECH Trainee Engineer Role (Nigeria)</div>
+      <h1 class="name">Ozomamelu <span>Chimaobi <em class="it">Adolphus</em></span></h1>
+      <div class="role">
+        <b>Electrical &amp; Electronics Engineer</b> | Automation, Communications &amp; Software Systems
+      </div>
+      <p class="lead">Graduate Electrical Engineer with a strong foundation in Circuit Theory, Communications Network Management, Electrical Power, MATLAB, and Full-Stack Engineering logic.</p>
+      <div class="cta" style="margin-top:24px;">
+        <a href="mailto:ozomameluchimaobi123@gmail.com" class="btn">Get in Touch</a>
+        <button id="copyEmail" class="btn ghost">Copy Email</button>
       </div>
     </div>
-    <div class="card3d rv"><div class="player" id="player">
-      <div class="p-head"><div class="avatar" id="avatar">C</div><div><div id="pName" style="font-weight:600"></div><small id="pTitle"></small></div></div>
-      <div class="lvl"><span id="lvlText">LVL 1</span><span id="xpText">0 / 25 XP</span></div>
-      <div class="xpbar"><i id="xpFill"></i></div>
-      <div class="stats" id="stats"></div>
-      <p class="p-foot">Self-rated. Ask me to prove any of it.</p>
-    </div></div>
-  </div>
-</section>
 
-<div class="marq" aria-hidden="true"><div class="mt" id="mt"></div></div>
-
-<!-- ABOUT -->
-<section id="about" data-q="read_about">
-  <div class="wrap">
-    <div class="chap rv">01 · About</div>
-    <h2 class="rv">I build the part of software people <em>trust with their money</em>.</h2>
-    <div class="about-grid">
-      <div class="rv" id="aboutText"></div>
-      <div class="facts rv" id="facts"></div>
-    </div>
-  </div>
-</section>
-
-<!-- WORK -->
-<section id="work">
-  <div class="wrap">
-    <div class="chap rv">02 · Selected work</div>
-    <h2 class="rv">Things I've <em>shipped</em>.</h2>
-    <div class="proj" id="projects"></div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" data-q="view_skills">
-  <div class="wrap">
-    <div class="chap rv">03 · Toolkit</div>
-    <h2 class="rv">What I reach for, and <em>why</em>.</h2>
-    <div class="skills" id="skillGrid"></div>
-  </div>
-</section>
-
-<!-- PATH -->
-<section id="path" data-q="see_experience">
-  <div class="wrap">
-    <div class="chap rv">04 · The path</div>
-    <h2 class="rv">Where I've been, <em>and learned</em>.</h2>
-    <div class="tl">
-      <div class="rv"><h3>Experience</h3><div class="rail" id="exp"></div></div>
-      <div class="rv"><h3>Education</h3><div class="rail" id="edu"></div></div>
-    </div>
-    <div class="certs rv" id="certs"></div>
-  </div>
-</section>
-
-<!-- VAULT -->
-<section id="vault">
-  <div class="wrap">
-    <div class="chap rv">05 · The vault</div>
-    <h2 class="rv">The director's cut. <em>Key required</em> (it's free).</h2>
-    <p class="lead rv">The essentials above are open to everyone. The vault holds the deeper engineering story behind Escrit, the decisions I'd defend in an interview, and what I'd do in my first 90 days.</p>
-    <div class="vaultbox locked rv" id="vaultBox">
-      <div class="vcontent" id="vaultContent"></div>
-      <div class="gate">
-        <div class="gatecard">
-          <div class="lock">🔒</div>
-          <h3>Grab a key to open the vault</h3>
-          <p>No wallet? Take a guest key instantly. Have a wallet? Claim a free on-chain key on Sepolia and earn <b>FOLIO</b> tokens as you explore.</p>
-          <div class="keyopts">
-            <button class="btn" id="guestKey" type="button">Use a guest key (instant)</button>
-            <button class="btn ghost" id="chainKey" type="button">Connect wallet &amp; claim on-chain key</button>
-          </div>
-          <p class="hint">Psst: there's a secret code for this too. Old-school gamers know it. ↑ ↑ ↓ ↓ ← → ← → B A</p>
+    <div class="player">
+      <div class="p-head">
+        <div class="avatar">CO</div>
+        <div>
+          <h3>Chimaobi Ozomamelu</h3>
+          <small>B.Eng Electrical &amp; Electronics (2025)</small>
+        </div>
+      </div>
+      <div class="lvl">
+        <span>INTECH Candidate Assessment</span>
+        <span style="color:var(--lime);">100% Match</span>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span>Circuit Analysis</span>
+          <div class="b"><i style="width:95%;"></i></div>
+          <span>95%</span>
+        </div>
+        <div class="stat">
+          <span>Networks &amp; Comms</span>
+          <div class="b"><i style="width:90%;"></i></div>
+          <span>90%</span>
+        </div>
+        <div class="stat">
+          <span>MATLAB / Control</span>
+          <div class="b"><i style="width:85%;"></i></div>
+          <span>85%</span>
+        </div>
+        <div class="stat">
+          <span>Full-Stack Coding</span>
+          <div class="b"><i style="width:88%;"></i></div>
+          <span>88%</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
+<div class="marq">
+  <div class="mt">
+    <span>Electrical Circuit Theory</span>
+    <span>Communications Engineering</span>
+    <span>Network Management</span>
+    <span>Industrial Automation Fundamentals</span>
+    <span>MATLAB Modelling</span>
+    <span>Workplace Safety (OSHA)</span>
+    <span>Full-Stack Software Development</span>
+  </div>
+</div>
+
+<section id="about">
   <div class="wrap">
-    <div class="contact rv">
-      <div class="chap" style="justify-content:center">06 · Let's talk</div>
-      <h2>Hire me. <em>Build something people trust.</em></h2>
-      <p class="lead" style="margin-inline:auto" id="contactLine"></p>
-      <div class="cta">
-        <button class="btn" id="copyEmail" type="button"></button>
-        <a class="btn ghost" id="cvBtn2" href="cv.pdf" download>Download CV</a>
-        <button class="btn ghost" id="printCv" type="button">Print-friendly CV</button>
+    <div class="chap">Candidate Profile</div>
+    <h2>Bridging Hardware Systems &amp; <em>Digital Control</em></h2>
+    <div class="about-grid">
+      <div>
+        <p>Versatile <strong>Electrical &amp; Electronics Engineering graduate</strong> (Communications Major) from the Federal University of Technology, Owerri (FUTO). Combines a rigorous theoretical background in circuit theory, power systems, and signal processing with practical experience handling physical network/broadcast hardware and modern software development.</p>
+        <p>Committed to adhering to strict <strong>HSE (Health, Safety, and Environment)</strong> practices and OSHA guidelines while eager to develop hands-on technical expertise in PLCs, SCADA, DCS, SIS, and telemetry systems in process automation.</p>
       </div>
-      <div class="socials" id="socials"></div>
+      <div class="facts">
+        <div class="fact">
+          <small>Academic Degree</small>
+          <div>B.Eng Electrical &amp; Electronics</div>
+        </div>
+        <div class="fact">
+          <small>Specialization</small>
+          <div>Communications Engineering</div>
+        </div>
+        <div class="fact">
+          <small>Safety Standard</small>
+          <div>OSHA Safety &amp; Health Certified</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-</main>
-<footer><span id="foot"></span></footer>
 
-<!-- QUEST DOCK -->
-<div class="dock" id="dock">
-  <div class="dock-panel" id="dockPanel">
-    <div class="dock-hd"><span>✦ Quest dock</span><button class="dock-x" id="dockX" type="button" aria-label="Minimize quest panel">–</button></div>
-    <label class="tog" id="meTog" style="display:none"><input type="checkbox" id="meChk" checked /> Show my portrait in the background</label>
-    <h4>Wallet</h4>
-    <div class="wallet" id="walletBox"></div>
-    <h4>Quest log</h4>
-    <div id="quests"></div>
-    <p class="warn" id="chainWarn"></p>
-    <p style="color:#6d6b7b;font-size:.72rem;margin-top:12px;font-family:var(--mono)">FOLIO lives on Sepolia testnet and has no monetary value. The lock is a game, not a security boundary.</p>
+<section id="skills">
+  <div class="wrap">
+    <div class="chap">Technical Capabilities</div>
+    <h2>Core <em>Competencies</em></h2>
+    <div class="skills">
+      <div class="sk">
+        <h3>Electrical &amp; Control</h3>
+        <div class="chips">
+          <span>Circuit Theory &amp; Analysis</span>
+          <span>Electrical Power &amp; Machines</span>
+          <span>Wiring &amp; Installation</span>
+          <span>Engineering Design &amp; Reliability</span>
+          <span>MATLAB / Simulink</span>
+        </div>
+      </div>
+      <div class="sk">
+        <h3>Communications &amp; Hardware</h3>
+        <div class="chips">
+          <span>Network Planning &amp; Management</span>
+          <span>Cisco Networking (IoT)</span>
+          <span>Broadcast Equipment Setup</span>
+          <span>Signal Quality Evaluation</span>
+          <span>Hardware Troubleshooting</span>
+        </div>
+      </div>
+      <div class="sk">
+        <h3>Software &amp; Analytics</h3>
+        <div class="chips">
+          <span>C++</span>
+          <span>Python</span>
+          <span>JavaScript / React</span>
+          <span>Node.js / Express</span>
+          <span>Data Science Fundamentals</span>
+        </div>
+      </div>
+    </div>
   </div>
-  <button class="dock-btn" id="dockBtn" type="button" aria-expanded="false" aria-controls="dockPanel" title="Quests &amp; wallet">✦ <span class="lbl">Quest</span> <b id="dockXp">0 XP</b> <span class="qc" id="dockQc"></span><span class="chev">▴</span></button>
-</div>
+</section>
 
-<!-- print CV (built from PROFILE) -->
-<div id="cvPrint"></div>
+<section id="projects">
+  <div class="wrap">
+    <div class="chap">Engineering Work</div>
+    <h2>Featured <em>Projects</em></h2>
+    <div class="proj">
+      <div class="feat">
+        <div class="body">
+          <div class="tag">Engineering Simulation &amp; Analytics</div>
+          <h3>MATLAB Stellar Motion &amp; Spectra Analysis</h3>
+          <p>Analytical and computational engineering project modeling motion and comparing spectral data.</p>
+          <ul class="ul">
+            <li>Modeled physical system behavior using MATLAB computational algorithms.</li>
+            <li>Analyzed signal structures and mathematical data models for high accuracy.</li>
+          </ul>
+          <div class="tech">
+            <span>MATLAB</span>
+            <span>Data Analysis</span>
+            <span>Signal Modeling</span>
+          </div>
+        </div>
+      </div>
 
-<script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+      <div class="feat">
+        <div class="body">
+          <div class="tag">Full-Stack Engineering</div>
+          <h3>Full-Stack Dynamic Client Portal</h3>
+          <p>End-to-end web application built using the MERN stack with responsive front-end and robust server logic.</p>
+          <ul class="ul">
+            <li>Designed client-server communication channels and database architecture.</li>
+            <li>Implemented security and data validation logic across modern web interfaces.</li>
+          </ul>
+          <div class="tech">
+            <span>JavaScript</span>
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="chap">Background</div>
+    <h2>Experience &amp; <em>Education</em></h2>
+    <div class="tl">
+      <div>
+        <h3>Professional &amp; Practical Experience</h3>
+        <div class="rail">
+          <div class="ev">
+            <small>Jan 2024 – May 2024</small>
+            <h4>Undergraduate Intern — NTA Enugu Zonal Branch</h4>
+            <p>Assisted in setting up power, computer, and network equipment for studio operations. Managed audio/video input hardware and repaired recording systems.</p>
+          </div>
+          <div class="ev">
+            <small>2024 – 2025</small>
+            <h4>Data Annotator &amp; AI Model Evaluator — OneForma</h4>
+            <p>Evaluated algorithmic outputs for quality, accuracy, and structural consistency across data pipelines.</p>
+          </div>
+          <div class="ev">
+            <small>January 2026</small>
+            <h4>Freelance Software Developer — Private Client</h4>
+            <p>Designed and deployed full-stack web solutions from concept to production environments.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Education &amp; Certifications</h3>
+        <div class="rail">
+          <div class="ev">
+            <small>2019 – 2025</small>
+            <h4>B.Eng Electrical &amp; Electronics Engineering</h4>
+            <p>Federal University of Technology, Owerri (FUTO)<br />Major in Communications Engineering.</p>
+          </div>
+          <div class="ev">
+            <small>Certifications</small>
+            <h4>Professional Training</h4>
+            <p>• Workplace Safety and Health Course (OSHA Nigeria)<br />
+               • Cisco Networking Academy: Intro to IoT, JavaScript Essentials, Data Science<br />
+               • MATLAB Onramp Training (CSAAE)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script>
-/* =====================================================================
-   1) EDIT YOUR CONTENT HERE. Everything on the page is rendered from this.
-      Anything in [BRACKETS] is a placeholder to replace with your real info.
-   ===================================================================== */
-const PROFILE = {
-  name: 'Chimaobi Ozomamelu',
-  first: 'Chimaobi', last: 'Ozomamelu',
-  title: 'Full-Stack Engineer · Fintech & Marketplaces',
-  availability: 'Open to full-time roles and internships · [City, Country] · Remote-friendly',
-  typed: [
-    'build trust into products that move money.',
-    'ship full-stack marketplaces end to end.',
-    'turn payment edge cases into reliable flows.',
-    'care about the unglamorous 1% that breaks in production.'
-  ],
-  about: [
-    'I\'m a <strong>full-stack engineer</strong> who likes problems where a bug costs someone real money. That\'s why I built <strong>Escrit</strong>, an escrow marketplace for Nigeria, where every payment is held until the buyer confirms delivery.',
-    'On Escrit I designed the order state machine, wired payments through Paystack and Flutterwave, handled webhooks, disputes and no-shows, and shipped it live for a hackathon. I like owning the whole slice: schema, API, UI and deployment.',
-    '[Add 1–2 sentences about what you want next: the kind of team, product or problem you want to join.]'
-  ],
-  facts: [
-    ['Focus', 'Payments, marketplaces, trust & safety'],
-    ['Stack', 'React · Node · MongoDB'],
-    ['Shipped', 'Escrit: live escrow marketplace'],
-    ['Based in', '[City, Country]']
-  ],
-  stats: [['Frontend', 85], ['Backend', 88], ['Payments', 80], ['DevOps', 70], ['Web3', 60]],
-  projects: {
-    featured: {
-      tag: 'Featured · Hackathon build · FinTech & Commerce',
-      name: 'Escrit',
-      blurb: 'A marketplace for products, courses and services where every purchase is protected by escrow. The buyer pays, Escrit holds the money, and the seller is paid only after the buyer confirms.',
-      bullets: [
-        'Order state machine: paid → held → shipped → confirmed → released, with disputes that freeze payout until an admin records a written decision',
-        'Paystack and Flutterwave adapters, signature-verified webhooks, and an owner-controlled test/live switch that defaults to test',
-        'Three listing types with different rules, price offers, no-show settlement, KYC and bank-name verification, real-time chat',
-        'Fee-inclusive pricing so the buyer pays the price they saw'
-      ],
-      tech: ['React', 'Vite', 'Tailwind', 'Node.js', 'Express', 'MongoDB', 'Socket.IO', 'Paystack', 'Flutterwave', 'Cloudinary', 'JWT', 'Vercel', 'Render'],
-      links: [['Live app', ''], ['GitHub', ''], ['Demo video', '']],
-      flow: ['Buyer pays via Paystack', 'Escrit holds the funds', 'Seller ships, adds tracking', 'Buyer confirms delivery', 'Payout released to seller']
-    },
-    more: [
-      { tag: '[Project type]', name: '[Project name]', blurb: '[One sentence: the problem, what you built, and the result.]' },
-      { tag: '[Project type]', name: '[Project name]', blurb: '[One sentence: the problem, what you built, and the result.]' }
-    ]
-  },
-  skills: {
-    'Frontend': ['React', 'Vite', 'Tailwind CSS', 'JavaScript (ES2023)', 'Accessibility basics'],
-    'Backend': ['Node.js', 'Express', 'MongoDB / Mongoose', 'REST APIs', 'Socket.IO', 'JWT auth', 'Joi validation'],
-    'Money & infra': ['Paystack', 'Flutterwave', 'Webhooks', 'Render', 'Vercel', 'Git / GitHub', 'Solidity (learning)', 'ethers.js']
-  },
-  experience: [
-    { when: '[Year – Present]', role: '[Role]', org: '[Company]', text: '[What you owned and the measurable outcome.]' },
-    { when: '[Year – Year]', role: '[Role]', org: '[Company]', text: '[What you owned and the measurable outcome.]' }
-  ],
-  education: [
-    { when: '[Year – Year]', role: '[Degree, Course]', org: '[University]', text: '[Honours, relevant coursework or final-year project.]' }
-  ],
-  certs: [
-    { icon: '🏅', name: '[Certification name]', by: '[Issuer · Year]' },
-    { icon: '🏅', name: '[Certification name]', by: '[Issuer · Year]' },
-    { icon: '🏆', name: 'StacStart Borderless Bytes Hackathon', by: 'Participant · 2026 · Escrit' }
-  ],
-  email: 'ozomameluchimaobi123@gmail.com',
-  socials: [['GitHub', ''], ['LinkedIn', ''], ['X / Twitter', ''], ['Escrit', '']],
-  cvUrl: 'cv.pdf',
-  vault: [
-    { h: 'Inside Escrit: the money flow', body: '<ul><li>One cart becomes one escrow order per listing, so a dispute on one item never freezes another</li><li>Payments are confirmed by webhook and by an on-demand re-check, so a missed webhook never strands an order</li><li>Webhook handlers re-verify amount, currency and reference before marking anything paid, and transitions are idempotent</li><li>Stock is re-checked at payment time so two buyers can\'t pay for the last item</li></ul>' },
-    { h: 'Decisions I\'d defend', body: '<ul><li><b>Test mode by default.</b> Live keys exist, but a fresh deploy can never charge a real card by accident</li><li><b>Mode switch is owner-only</b> and requires live keys to be present before it can be enabled</li><li><b>Honest escrow claims.</b> It\'s a platform-managed flow, not a licensed trust account, and I say so in the product and pitch</li><li><b>Written reasons</b> on every dispute outcome, so decisions can be audited</li></ul>' },
-    { h: 'Known limits (because you should ask)', body: '<ul><li>Switching test/live with orders in flight can break verification. Next step: store the payment mode on each transaction</li><li>Seller delivery proof and auto-confirm after a window are not built yet</li><li>Email depends on a third-party provider; I built a fallback and an escape hatch for demos</li></ul><p style="margin-top:12px"><b style="color:var(--fg)">My first 90 days:</b> [edit: ship one real feature in week 2, own an on-call rotation by month 2, improve one core metric by month 3].</p>' }
-  ]
-};
-
-/* PORTRAIT: put your photo next to this file as me.jpg (portrait or head-and-shoulders,
-   at least 1200px tall, plain background, face roughly centre). Leave PHOTO_URL as '' to hide it. */
-const PHOTO_URL = 'me.jpg';
-
-/* =====================================================================
-   2) WEB3 CONFIG: paste your deployed FolioQuest address (Sepolia) here.
-   ===================================================================== */
-const CONTRACT_ADDRESS = '0x3A61174F4374b33ffe7bF0e6c145e7DfdBC818F5';              // e.g. '0x1234...abcd'. Empty = wallet features show "not deployed yet".
-const SEPOLIA = { chainId: '0xaa36a7', name: 'Sepolia' };
-const ABI = [
-  'function claimKey()', 'function hasKey(address) view returns (bool)',
-  'function completeActivity(bytes32 id)', 'function done(address,bytes32) view returns (bool)',
-  'function balanceOf(address) view returns (uint256)',
-  'function symbol() view returns (string)', 'function decimals() view returns (uint8)'
-];
-const FAUCET = 'https://cloud.google.com/application/web3/faucet/ethereum/sepolia';
-
-/* quests: id must match the string hashed in the contract constructor */
-const QUESTS = [
-  { id: 'visit', t: 'Show up', xp: 5 },
-  { id: 'read_about', t: 'Read the About section', xp: 5 },
-  { id: 'view_skills', t: 'Check out the toolkit', xp: 5 },
-  { id: 'see_experience', t: 'Browse the path', xp: 5 },
-  { id: 'open_project', t: 'Open a project link', xp: 10 },
-  { id: 'copy_email', t: 'Copy my email', xp: 10 },
-  { id: 'download_cv', t: 'Download the CV', xp: 15 },
-  { id: 'unlock_vault', t: 'Unlock the vault', xp: 20 },
-  { id: 'konami', t: 'Find the secret code', xp: 25, secret: true }
-];
-
-/* ============================ ENGINE ============================ */
-const $ = (s, el = document) => el.querySelector(s);
-const $$ = (s, el = document) => [...el.querySelectorAll(s)];
-const esc = (s) => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const store = {
-  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
-  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
-};
-const P = PROFILE;
-document.title = `${P.name} — ${P.title}`;
-$('#brandName').textContent = P.first;
-
-/* render static content */
-$('#availability').textContent = P.availability;
-$('#heroName').innerHTML = `<span>${esc(P.first)}</span><span class="it">${esc(P.last)}</span>`;
-$('#heroName').setAttribute('aria-label', P.name);
-$('#avatar').textContent = P.first[0];
-$('#pName').textContent = P.name; $('#pTitle').textContent = P.title.split('·')[0].trim();
-$('#aboutText').innerHTML = P.about.map(t => `<p>${t}</p>`).join('');
-$('#facts').innerHTML = P.facts.map(([k, v]) => `<div class="fact"><small>${esc(k)}</small><div>${esc(v)}</div></div>`).join('');
-$('#stats').innerHTML = P.stats.map(([k, v]) => `<div class="stat"><span>${esc(k)}</span><div class="b"><i data-w="${v}"></i></div><span>${v}</span></div>`).join('');
-$('#mt').innerHTML = [...P.skills['Frontend'], ...P.skills['Backend'], ...P.skills['Money & infra'], ...P.skills['Frontend'], ...P.skills['Backend'], ...P.skills['Money & infra']].map(s => `<span>${esc(s)}</span>`).join('');
-$('#skillGrid').innerHTML = Object.entries(P.skills).map(([g, a]) => `<div class="sk rv"><h3>${esc(g)}</h3><div class="chips">${a.map(s => `<span>${esc(s)}</span>`).join('')}</div></div>`).join('');
-const ev = (e) => `<div class="ev"><small>${esc(e.when)}</small><h4>${esc(e.role)} · ${esc(e.org)}</h4><p>${esc(e.text)}</p></div>`;
-$('#exp').innerHTML = P.experience.map(ev).join(''); $('#edu').innerHTML = P.education.map(ev).join('');
-$('#certs').innerHTML = P.certs.map(c => `<div class="cert"><i>${c.icon}</i><div><b>${esc(c.name)}</b><br><small>${esc(c.by)}</small></div></div>`).join('');
-const f = P.projects.featured;
-const linkBtns = f.links.filter(l => l[1]).map(([n, u]) => `<a class="btn sm ghost proj-link" target="_blank" rel="noopener" href="${esc(u)}">${esc(n)} ↗</a>`).join(' ');
-$('#projects').innerHTML = `
-  <article class="feat rv">
-    <div class="body"><div class="tag">${esc(f.tag)}</div><h3>${esc(f.name)}</h3><p>${esc(f.blurb)}</p>
-      <ul class="ul">${f.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul>
-      <div class="tech">${f.tech.map(t => `<span>${esc(t)}</span>`).join('')}</div>
-      <div class="cta">${linkBtns || '<span class="mono" style="color:var(--mut);font-size:.8rem">[Add live, GitHub and demo links in PROFILE.projects.featured.links]</span>'}</div></div>
-    <div class="vis"><div class="flow" id="flow">${f.flow.map((s, i) => `<div class="node"><b>0${i + 1}</b>${esc(s)}</div>`).join('')}</div></div>
-  </article>
-  <div class="more">${P.projects.more.map(m => `<div class="mini rv"><div class="tag">${esc(m.tag)}</div><h3>${esc(m.name)}</h3><p>${esc(m.blurb)}</p></div>`).join('')}</div>`;
-$('#vaultContent').innerHTML = P.vault.map(v => `<div class="vc"><h3>${esc(v.h)}</h3>${v.body}</div>`).join('');
-$('#contactLine').textContent = 'Roles, internships, freelance, or a hard payments problem you want a second pair of hands on. I reply fast.';
-$('#copyEmail').textContent = '✉ ' + P.email;
-$('#socials').innerHTML = P.socials.filter(s => s[1]).map(([n, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n)} ↗</a>`).join('') || `<span class="mono" style="color:var(--mut);font-size:.8rem">[Add social links in PROFILE.socials]</span>`;
-$('#foot').textContent = `© ${new Date().getFullYear()} ${P.name} · Designed and built by hand · FOLIO runs on Sepolia testnet`;
-$('#cvBtn').href = $('#cvBtn2').href = P.cvUrl;
-
-/* print CV */
-$('#cvPrint').innerHTML = `<h1>${esc(P.name)}</h1><p>${esc(P.title)} · ${esc(P.email)}</p>
-<h2>Summary</h2><p>${P.about[0].replace(/<[^>]+>/g, '')}</p>
-<h2>Selected work</h2><div class="row"><span>${esc(f.name)}</span><span>${esc(f.tag.split('·')[0])}</span></div><p>${esc(f.blurb)}</p><ul>${f.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul><p>Tech: ${f.tech.join(', ')}</p>
-<h2>Skills</h2>${Object.entries(P.skills).map(([g, a]) => `<p><b>${esc(g)}:</b> ${a.map(esc).join(', ')}</p>`).join('')}
-<h2>Experience</h2>${P.experience.map(e => `<div class="row"><span>${esc(e.role)}, ${esc(e.org)}</span><span>${esc(e.when)}</span></div><p>${esc(e.text)}</p>`).join('')}
-<h2>Education</h2>${P.education.map(e => `<div class="row"><span>${esc(e.role)}, ${esc(e.org)}</span><span>${esc(e.when)}</span></div><p>${esc(e.text)}</p>`).join('')}
-<h2>Certifications</h2><ul>${P.certs.map(c => `<li>${esc(c.name)} — ${esc(c.by)}</li>`).join('')}</ul>`;
-$('#printCv').addEventListener('click', () => { award('download_cv'); window.print(); });
-
-/* typed role */
-(() => {
-  const el = $('#typed'); let i = 0, j = 0, del = false;
-  if (matchMedia('(prefers-reduced-motion:reduce)').matches) { el.textContent = P.typed[0]; return; }
-  (function tick() {
-    const full = P.typed[i];
-    el.textContent = full.slice(0, j);
-    if (!del && j < full.length) { j++; return setTimeout(tick, 38); }
-    if (!del) { del = true; return setTimeout(tick, 1700); }
-    if (j > 0) { j--; return setTimeout(tick, 18); }
-    del = false; i = (i + 1) % P.typed.length; setTimeout(tick, 300);
-  })();
-})();
-
-/* scroll fx */
-const nav = $('#nav'), prog = $('#prog');
-addEventListener('scroll', () => {
-  nav.classList.toggle('solid', scrollY > 30);
-  const h = document.documentElement; prog.style.width = (scrollY / (h.scrollHeight - innerHeight) * 100) + '%';
-}, { passive: true });
-addEventListener('pointermove', (e) => { const g = $('#glow'); g.style.left = e.clientX + 'px'; g.style.top = e.clientY + 'px'; }, { passive: true });
-const io = new IntersectionObserver(es => es.forEach(e => {
-  if (!e.isIntersecting) return;
-  e.target.classList.add('in');
-  if (e.target.id === 'player') $$('.stat i').forEach(i => i.style.width = i.dataset.w + '%');
-  io.unobserve(e.target);
-}), { threshold: .15 });
-$$('.rv').forEach(el => io.observe(el)); io.observe($('#player'));
-setTimeout(() => $$('.stat i').forEach(i => i.style.width = i.dataset.w + '%'), 600);
-/* tilt */
-const pl = $('#player');
-pl.parentElement.addEventListener('pointermove', (e) => { const r = pl.getBoundingClientRect(); const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; pl.style.transform = `rotateY(${x * 10}deg) rotateX(${-y * 10}deg)`; });
-pl.parentElement.addEventListener('pointerleave', () => pl.style.transform = '');
-$$('.mini').forEach(m => m.addEventListener('pointermove', e => { const r = m.getBoundingClientRect(); m.style.setProperty('--mx', (e.clientX - r.left) + 'px'); m.style.setProperty('--my', (e.clientY - r.top) + 'px'); }));
-/* project flow animation */
-(() => { const nodes = $$('#flow .node'); let k = 0; setInterval(() => { nodes.forEach((n, i) => n.classList.toggle('on', i <= k)); k = (k + 1) % (nodes.length + 2); }, 1100); })();
-
-/* ============================ PORTRAIT ============================ */
-(() => {
-  const me = $('#me'), img = $('#me img'), tog = $('#meTog'), chk = $('#meChk');
-  if (!PHOTO_URL) return;
-  const probe = new Image();
-  probe.onload = () => {
-    img.src = PHOTO_URL;
-    $('#avatar').innerHTML = `<img alt="Portrait of ${esc(P.name)}" src="${esc(PHOTO_URL)}" />`;
-    tog.style.display = 'flex';
-    let show = store.get('fq_me', true); chk.checked = show;
-    const reduced = matchMedia('(prefers-reduced-transparency:reduce)').matches;
-    const base = () => (innerWidth < 760 ? .6 : 1);
-    function level() {
-      // bold in the hero (about 38%), settling to about 18% once you start reading
-      const HERO = 0.38, READING = 0.18;
-      const t = Math.min(1, scrollY / (innerHeight * .8));
-      return (HERO - t * (HERO - READING)) * base();
-    }
-    function apply() { me.style.setProperty('--me-o', level().toFixed(3)); me.classList.toggle('on', show && !reduced); }
-    apply();
-    addEventListener('scroll', apply, { passive: true }); addEventListener('resize', apply);
-    chk.addEventListener('change', () => { show = chk.checked; store.set('fq_me', show); apply(); });
-    if (!matchMedia('(prefers-reduced-motion:reduce)').matches) addEventListener('pointermove', (e) => { img.style.transform = `translate(${(e.clientX / innerWidth - .5) * -14}px,${(e.clientY / innerHeight - .5) * -10}px) scale(1.04)`; }, { passive: true });
-  };
-  probe.onerror = () => console.info('[portrait] ' + PHOTO_URL + ' not found: add your photo next to index.html to show it.');
-  probe.src = PHOTO_URL;
-})();
-
-/* ============================ GAME STATE ============================ */
-const state = { local: store.get('fq_done', {}), guestKey: store.get('fq_guest', false), account: null, provider: null, contract: null, chainKey: false, chainDone: {}, bal: '0', dec: 18, sym: 'FOLIO', onSepolia: false };
-const levelOf = (xp) => Math.floor(xp / 25) + 1;
-const totalXp = () => QUESTS.filter(q => state.local[q.id]).reduce((s, q) => s + q.xp, 0);
-const hasAnyKey = () => state.guestKey || state.chainKey;
-
-function toast(msg, bad) { const t = document.createElement('div'); t.className = 'toast' + (bad ? ' bad' : ''); t.textContent = msg; $('#toasts').append(t); setTimeout(() => t.remove(), 3700); }
-function award(id) {
-  const q = QUESTS.find(x => x.id === id); if (!q || state.local[id]) return;
-  state.local[id] = true; store.set('fq_done', state.local);
-  toast(`+${q.xp} XP · ${q.t}`); renderGame(); pingDock();
-}
-function renderGame() {
-  const xp = totalXp(), lvl = levelOf(xp), into = xp % 25;
-  $('#xpPill').textContent = xp; $('#dockXp').textContent = xp + ' XP'; $('#dockQc').textContent = QUESTS.filter(q => state.local[q.id]).length + '/' + QUESTS.length;
-  $('#lvlText').textContent = 'LVL ' + lvl; $('#xpText').textContent = `${into} / 25 XP`;
-  $('#xpFill').style.width = (into / 25 * 100) + '%';
-  $('#vaultBox').classList.toggle('locked', !hasAnyKey());
-  $('#walletBtn').textContent = state.account ? state.account.slice(0, 6) + '…' + state.account.slice(-4) : 'Connect wallet';
-  $('#quests').innerHTML = QUESTS.map(q => {
-    const local = !!state.local[q.id], chain = !!state.chainDone[q.id];
-    const name = q.secret && !local ? (hasAnyKey() ? 'Secret: ' + q.t : '??? (secret)') : q.t;
-    const hint = q.secret && !local && hasAnyKey() ? '<small>Hidden. Cheat code on a keyboard, or tap the logo 7 times.</small>' : '';
-    let action = '';
-    if (chain) action = '<span class="on">on-chain ✓</span>';
-    else if (local && state.chainKey && state.onSepolia) action = `<button class="btn sm" data-claim="${q.id}" type="button">Claim ${q.xp} FOLIO</button>`;
-    else action = `<span class="mono" style="color:var(--mut);font-size:.72rem">${q.xp} XP</span>`;
-    return `<div class="q ${local ? 'd' : ''}"><div class="ck">${local ? '✓' : ''}</div><div>${esc(name)}${hint}</div>${action}</div>`;
-  }).join('');
-  const claimable = QUESTS.filter(q => state.local[q.id] && !state.chainDone[q.id]).length;
-  $('#walletBox').innerHTML = !state.account
-    ? `<div>Connect a wallet to claim a free key on Sepolia and mint FOLIO for the quests you complete.</div><div style="margin-top:10px"><button class="btn sm" id="wbtn2" type="button">Connect wallet</button></div>`
-    : `<div class="row"><span>Account</span><span>${state.account.slice(0, 8)}…${state.account.slice(-6)}</span></div>
-       <div class="row"><span>Network</span><span>${state.onSepolia ? 'Sepolia ✓' : 'Wrong network'}</span></div>
-       <div class="row"><span>On-chain key</span><span>${state.chainKey ? 'Yes ✓' : 'Not yet'}</span></div>
-       <div class="row"><span>FOLIO balance</span><span>${state.bal}</span></div>
-       <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-       ${!state.onSepolia ? '<button class="btn sm" id="switchNet" type="button">Switch to Sepolia</button>' : ''}
-       ${state.onSepolia && CONTRACT_ADDRESS ? '<button class="btn sm ghost" id="addFolio" type="button">Add FOLIO to wallet</button><button class="btn sm ghost" id="refreshBal" type="button">Refresh</button>' : ''}
-       ${state.onSepolia && !state.chainKey ? '<button class="btn sm" id="claimKeyBtn" type="button">Claim free key</button>' : ''}
-       ${state.chainKey && claimable > 1 ? '<button class="btn sm ghost" id="claimAll" type="button">Claim all</button>' : ''}
-       </div>`;
-  $('#chainWarn').textContent = '';
-}
-renderGame();
-
-/* ============================ WEB3 ============================ */
-const ready = () => typeof ethers !== 'undefined';
-
-/* Find the wallet. Handles several installed wallets (EIP-6963), MetaMask sitting in
-   window.ethereum.providers, and wallets that inject a moment after the page loads. */
-const announced = [];
-addEventListener('eip6963:announceProvider', (e) => { if (e.detail && e.detail.provider) announced.push(e.detail); });
-const askWallets = () => dispatchEvent(new Event('eip6963:requestProvider'));
-askWallets();
-let eventsBound = null;
-function getInjected() {
-  const mm = announced.find(a => a.info && (a.info.rdns === 'io.metamask' || /metamask/i.test(a.info.name || '')));
-  if (mm) return mm.provider;
-  if (announced.length) return announced[0].provider;
-  const eth = window.ethereum;
-  if (eth && Array.isArray(eth.providers) && eth.providers.length) return eth.providers.find(p => p.isMetaMask) || eth.providers[0];
-  return eth || null;
-}
-async function waitForWallet(ms = 1500) {
-  let w = getInjected(); const end = Date.now() + ms;
-  while (!w && Date.now() < end) { askWallets(); await new Promise(r => setTimeout(r, 150)); w = getInjected(); }
-  return w;
-}
-function bindWalletEvents(w) {
-  if (!w || eventsBound === w || !w.on) return; eventsBound = w;
-  w.on('accountsChanged', (a) => { state.account = a[0] || null; refreshChain(); });
-  w.on('chainChanged', () => refreshChain());
-}
-function normalizedAddress() { try { return ethers.getAddress(CONTRACT_ADDRESS.toLowerCase()); } catch { return null; } }
-const idOf = (name) => ethers.id(name);
-function chainError(e) {
-  const m = (e && (e.shortMessage || e.reason || e.message)) || 'Something went wrong';
-  if (e && (e.code === 4001 || e.code === 'ACTION_REJECTED')) return 'Request cancelled.';
-  if (/insufficient funds/i.test(m)) { $('#chainWarn').innerHTML = `You need a little Sepolia ETH for gas. <a href="${FAUCET}" target="_blank" rel="noopener" style="color:var(--lime)">Get free test ETH</a>.`; return 'Not enough Sepolia ETH for gas.'; }
-  return m.length > 110 ? m.slice(0, 110) + '…' : m;
-}
-async function connectWallet() {
-  if (!ready()) return toast('Web3 library failed to load. Check your connection.', true);
-  const injected = await waitForWallet();
-  if (!injected) {
-    if (location.protocol === 'file:') return toast('Wallets cannot connect to a page opened as a file. Run it from http://localhost or deploy it (see below).', true);
-    return toast('No wallet detected in this browser. Check the extension is enabled for this site (and not in a private window).', true);
+document.getElementById('copyEmail').addEventListener('click', async () => {
+  const email = "ozomameluchimaobi123@gmail.com";
+  try {
+    await navigator.clipboard.writeText(email);
+  } catch {
+    const i = document.createElement('input');
+    i.value = email;
+    document.body.append(i);
+    i.select();
+    document.execCommand('copy');
+    i.remove();
   }
-  bindWalletEvents(injected);
-  try {
-    state.provider = new ethers.BrowserProvider(injected, 'any');
-    const accts = await state.provider.send('eth_requestAccounts', []);
-    state.account = accts[0];
-    await refreshChain(); toast('Wallet connected');
-  } catch (e) { toast(chainError(e), true); }
-  pingDock();
-}
-async function switchToSepolia() {
-  try { await getInjected().request({ method: 'wallet_switchEthereumChain', params: [{ chainId: SEPOLIA.chainId }] }); await refreshChain(); }
-  catch (e) { toast(chainError(e), true); }
-}
-async function refreshChain() {
-  if (!state.account) return renderGame();
-  const injected = getInjected();
-  if (!injected) return renderGame();
-  /* rebuild the provider each time: a provider created on another network goes stale after a switch */
-  state.provider = new ethers.BrowserProvider(injected, 'any');
-  let chainHex = '';
-  try { chainHex = String(await injected.request({ method: 'eth_chainId' })).toLowerCase(); } catch { chainHex = ''; }
-  state.onSepolia = chainHex === SEPOLIA.chainId;
-  state.chainKey = false; state.chainDone = {}; state.bal = '0';
-  if (state.onSepolia && CONTRACT_ADDRESS) {
-    try {
-      const signer = await state.provider.getSigner();
-      const addr = normalizedAddress();
-      if (!addr) throw new Error('CONTRACT_ADDRESS is not a valid address');
-      state.contract = new ethers.Contract(addr, ABI, signer);
-      state.chainKey = await state.contract.hasKey(state.account);
-      try { state.dec = Number(await state.contract.decimals()); } catch { state.dec = 18; }
-      try { state.sym = await state.contract.symbol(); } catch { state.sym = 'FOLIO'; }
-      state.bal = Number(ethers.formatUnits(await state.contract.balanceOf(state.account), state.dec)).toLocaleString(undefined, { maximumFractionDigits: 4 });
-      for (const q of QUESTS) state.chainDone[q.id] = await state.contract.done(state.account, idOf(q.id));
-    } catch (e) { console.error('FOLIO read failed', e); toast('Could not read the contract. Is the address right?', true); }
-  } else if (state.onSepolia && !CONTRACT_ADDRESS) {
-    $('#chainWarn').textContent = 'Contract not deployed yet: set CONTRACT_ADDRESS in index.html.';
+  alert('Email address copied to clipboard!');
+});
+
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('nav');
+  if (window.scrollY > 50) {
+    nav.classList.add('solid');
+  } else {
+    nav.classList.remove('solid');
   }
-  renderGame();
-}
-async function addFolioToWallet() {
-  try {
-    const ok = await getInjected().request({ method: 'wallet_watchAsset', params: { type: 'ERC20', options: { address: normalizedAddress(), symbol: (state.sym || 'FOLIO').slice(0, 11), decimals: state.dec || 18 } } });
-    toast(ok ? 'FOLIO added to your wallet ✦' : 'Request dismissed.');
-  } catch (e) { toast(chainError(e), true); }
-}
-async function claimKeyOnChain() {
-  if (!state.account) return connectWallet().then(() => state.account && claimKeyOnChain());
-  if (!CONTRACT_ADDRESS) return toast('Contract not deployed yet. Use a guest key for now.', true);
-  if (!state.onSepolia) return switchToSepolia();
-  try {
-    toast('Confirm the transaction in your wallet…');
-    const tx = await state.contract.claimKey(); toast('Key transaction sent. Waiting…');
-    await tx.wait(); await refreshChain(); onUnlocked(true);
-  } catch (e) { toast(chainError(e), true); }
-}
-async function claimActivity(id) {
-  try {
-    toast('Confirm the transaction in your wallet…');
-    const tx = await state.contract.completeActivity(idOf(id)); await tx.wait();
-    await refreshChain(); toast('FOLIO claimed ✦');
-  } catch (e) { toast(chainError(e), true); }
-}
-async function claimAll() { for (const q of QUESTS) if (state.local[q.id] && !state.chainDone[q.id]) { await claimActivity(q.id); } }
 
-addEventListener('load', () => { askWallets(); setTimeout(() => bindWalletEvents(getInjected()), 800); });
-
-/* ============================ UNLOCK ============================ */
-function onUnlocked() { award('unlock_vault'); confetti(); $('#vaultBox').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-function takeGuestKey() { state.guestKey = true; store.set('fq_guest', true); renderGame(); onUnlocked(); toast('Guest key acquired. Vault unlocked.'); }
-function confetti() {
-  const c = $('#confetti'), x = c.getContext('2d'); c.width = innerWidth; c.height = innerHeight;
-  const cols = ['#c6ff3d', '#8b6cff', '#ff5d8f', '#f2f0ea'];
-  const ps = Array.from({ length: 140 }, () => ({ x: innerWidth / 2, y: innerHeight * .6, vx: (Math.random() - .5) * 16, vy: -Math.random() * 16 - 4, s: Math.random() * 7 + 3, c: cols[Math.random() * 4 | 0], r: Math.random() * 6, vr: (Math.random() - .5) * .3 }));
-  let f = 0; (function step() {
-    x.clearRect(0, 0, c.width, c.height);
-    ps.forEach(p => { p.vy += .35; p.x += p.vx; p.y += p.vy; p.r += p.vr; x.save(); x.translate(p.x, p.y); x.rotate(p.r); x.fillStyle = p.c; x.fillRect(-p.s / 2, -p.s / 2, p.s, p.s * .6); x.restore(); });
-    if (++f < 130) requestAnimationFrame(step); else x.clearRect(0, 0, c.width, c.height);
-  })();
-}
-if (matchMedia('(prefers-reduced-motion:reduce)').matches) window.confetti = () => {};
-
-/* ============================ WIRING ============================ */
-$('#guestKey').addEventListener('click', takeGuestKey);
-$('#chainKey').addEventListener('click', claimKeyOnChain);
-function setDock(open) { $('#dock').classList.toggle('open', open); $('#dockBtn').setAttribute('aria-expanded', open); }
-function pingDock() { const b = $('#dockBtn'); b.classList.remove('ping'); void b.offsetWidth; b.classList.add('ping'); }
-$('#walletBtn').addEventListener('click', () => state.account ? setDock(!$('#dock').classList.contains('open')) : connectWallet());
-$('#dockBtn').addEventListener('click', () => setDock(!$('#dock').classList.contains('open')));
-$('#dockX').addEventListener('click', () => { setDock(false); $('#dockBtn').focus(); });
-$('#questBtn').addEventListener('click', () => setDock(true));
-/* collapse on Esc or when clicking/tapping outside the dock */
-addEventListener('keydown', e => { if (e.key === 'Escape') setDock(false); });
-document.addEventListener('pointerdown', e => { const d = $('#dock'); if (d.classList.contains('open') && !d.contains(e.target) && !e.target.closest('#walletBtn, #questBtn')) setDock(false); });
-document.addEventListener('click', (e) => {
-  const t = e.target;
-  if (t.id === 'wbtn2') connectWallet();
-  if (t.id === 'switchNet') switchToSepolia();
-  if (t.id === 'addFolio') addFolioToWallet();
-  if (t.id === 'refreshBal') refreshChain();
-  if (t.id === 'claimKeyBtn') claimKeyOnChain();
-  if (t.id === 'claimAll') claimAll();
-  if (t.dataset && t.dataset.claim) claimActivity(t.dataset.claim);
-  if (t.closest && t.closest('.proj-link')) award('open_project');
-  if (t.closest && (t.closest('#cvBtn') || t.closest('#cvBtn2'))) award('download_cv');
+  const prog = document.getElementById('prog');
+  const winScroll = document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  prog.style.width = scrolled + "%";
 });
-$('#copyEmail').addEventListener('click', async () => {
-  try { await navigator.clipboard.writeText(P.email); } catch { const i = document.createElement('input'); i.value = P.email; document.body.append(i); i.select(); document.execCommand('copy'); i.remove(); }
-  toast('Email copied'); award('copy_email');
-});
-/* section-view quests */
-const qio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting && e.target.dataset.q) { award(e.target.dataset.q); qio.unobserve(e.target); } }), { threshold: .35 });
-$$('section[data-q]').forEach(s => qio.observe(s));
-setTimeout(() => award('visit'), 1200);
-/* konami */
-(() => { const seq = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']; let k = 0;
-  addEventListener('keydown', e => { const key = e.key.length === 1 ? e.key.toLowerCase() : e.key; k = key === seq[k] ? k + 1 : (key === seq[0] ? 1 : 0);
-    if (k === seq.length) { k = 0; secretFound(); } });
-  /* touch-friendly alternative: tap the logo 7 times in a row (each tap within 1.5s of the last) */
-  let taps = 0, last = 0;
-  $('.brand').addEventListener('click', () => { const now = Date.now(); taps = now - last < 1500 ? taps + 1 : 1; last = now; if (taps >= 7) { taps = 0; secretFound(); } });
-  function secretFound() { award('konami'); if (!hasAnyKey()) { state.guestKey = true; store.set('fq_guest', true); renderGame(); onUnlocked(); toast('Secret code accepted. Key granted ✦'); } else { confetti(); } }
-})();
 </script>
 </body>
 </html>
